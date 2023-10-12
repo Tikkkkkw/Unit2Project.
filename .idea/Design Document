@@ -1,0 +1,38 @@
+LinearEquation:
+	Instance variables:
+		private int x1 –  The x coordinates of the first point.
+		private int y1 –  The y coordinates of the first point.
+		private int x2 –  The x coordinates of the second point.
+        private int y2 –  The y coordinates of the second point.
+    Constructors:
+        public linearEquation(int x, int y)
+        public linearEquation(int x, int y, int xB, int yB)
+    Methods:
+        public String getCoords()
+            returns the x, and y coordinates of the point that's inputted.
+        public double slopeCalculate()
+            Calculates and returns the slope of the point by using (y2-y1)/(x2-x1), the rise ove run formula.
+        public double Y_intercept()
+            Calculates the y-intercept, by using the formula, y minus slope times x. With the y-intercept being returned
+        public String slopeInterceptForm()
+            Returns the form by plugging in y=mx+b.Returns the formula as a string
+        public double distanceBetweenPoints()
+            Calculates and returns the answer of the square root of (x2-1)^2+(y2-y1)^2
+        public String solvingCoordPoint(double x_cords)
+            Calculate the y-coordinates by using the user inputted x_cord, the slope, and the y-intercept.
+            Returns the full poing with both X, and Y.
+        public String toString_()
+            Calls and returns the slopecalculation, y-intercept, slope formula, and distance method.
+            returns the information with proper context.
+
+EquationRunner.java:
+    1. Import java.util.Scanner
+    2. Ask the user to input the first point
+    3. substring the x, and y values.
+    4. Ask the user to input the second point.
+    5. substing the x, and y valuse in another valarible.
+    6. Store the x, and y values of both points as a LinearEquation coordinate point.
+    7. Calls the toString_ method, to print out the slope, y-intercept, slope formula, and distance.
+    8. Ask the user to import the third x-value.
+    9. Close Scanner
+    10. Prints the solvedcoorpoint.
